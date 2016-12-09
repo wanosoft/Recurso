@@ -1,0 +1,20 @@
+<form action="/Alumno/create" method="POST" role="form" class="new">
+	<div class="form-group">
+	<h2>Create a Alumno</h2>
+
+<% if(flash && flash.err) { %>
+<ul class="alert alert-success">
+<% Object.keys(flash.err).forEach(function(error) { %>
+<li><%- JSON.stringify(flash.err[error]) %></li>
+<% }) %>
+</ul>
+<% } %>
+	
+	<div class="control-group" style = "width: 300px;">
+	<input type="text" class="form-control" placeholder="['id_matricula'],['cuatrimestre'],['grupo'],['nom_pila'],['APaterno'],['AMaterno'],['sexo'],['fecha_nacimiento'],['direccion'],['nombre_contacto'],['parentesco'],['antecedente'],['clave_carrera']" name="['id_matricula'],['cuatrimestre'],['grupo'],['nom_pila'],['APaterno'],['AMaterno'],['sexo'],['fecha_nacimiento'],['direccion'],['nombre_contacto'],['parentesco'],['antecedente'],['clave_carrera']">
+	</div>
+
+	</div>
+	<input type="submit" value="Submit" class="btn btn-default"/> | 
+	<a href="/Alumno">Back to list</a>
+</form>

@@ -1,0 +1,14 @@
+<form class="show">
+	<div class="form-group">
+		<h2> a Alumno... </h2>
+		
+	<div class="form-group" style="width: 400px;">
+	<label>name</label>
+	<input value="<%= Alumno.['id_matricula'],['cuatrimestre'],['grupo'],['nom_pila'],['APaterno'],['AMaterno'],['sexo'],['fecha_nacimiento'],['direccion'],['nombre_contacto'],['parentesco'],['antecedente'],['clave_carrera'] %>" name="['id_matricula'],['cuatrimestre'],['grupo'],['nom_pila'],['APaterno'],['AMaterno'],['sexo'],['fecha_nacimiento'],['direccion'],['nombre_contacto'],['parentesco'],['antecedente'],['clave_carrera']" type="text" class="form-control" disabled/>
+	</div>
+
+</div>
+</div>
+<a href="/Alumno/edit/<%=Alumno.id %>" class="btn btn-default">Edit</a> |
+<a href="/Alumno">Back to list</a>
+</form>
