@@ -6,6 +6,8 @@
  */
 
 module.exports = {
-	
+	new:function(req, res){
+		res.view('genera_inventario/index2');
+	}
 };
 

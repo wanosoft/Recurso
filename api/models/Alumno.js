@@ -59,12 +59,6 @@ module.exports = {
 			required: true
 		},
 
-		clave_carrera: {
-			type: 'string',
-			required: true
-			
-		},
-
 		telefono: {
 			type: 'string',
 			required: true

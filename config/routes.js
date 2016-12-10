@@ -37,7 +37,7 @@ module.exports.routes = {
   },
 
   '/alumnochart': {
-    view: '/alumno/index'
+    controller: "AlumnoController", action:"new"
   }
 
   /***************************************************************************

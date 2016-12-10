@@ -6,6 +6,8 @@
  */
 
 module.exports = {
-	
+	new:function(req, res){
+		res.view('historia_clinico/index2');
+	}
 };
 

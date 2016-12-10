@@ -18,7 +18,7 @@ module.exports = {
 			required: true
 		},
 		alumno: {
-			type: 'collection',
+			collection: 'alumno',
 			via: 'carrera'
 		}
   	}
